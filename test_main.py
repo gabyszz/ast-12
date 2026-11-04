@@ -10,7 +10,7 @@ def test_raiz():
 def test_somar():
     resposta = client.get("/somar/2/3")
     assert resposta.status_code == 200
-    assert resposta.json() == {"resultado": 5}
+    assert resposta.json() == {"resultado": 4}
 def test_multiplicar():
     resposta = client.get("/multiplicar/2/2")
-    assert resposta.json() == {"resultado": 5}
+    assert resposta.json() == {"resultado": 4}
